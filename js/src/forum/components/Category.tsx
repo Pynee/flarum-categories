@@ -97,8 +97,8 @@ export default class Category extends Component<Attrs> {
       <Link
         className={`TagCategory-content ${app.forum.attribute('categories.compactMobile')? 'compactMobile' : '' } TagCategory-content-${tag.slug()}`}
         style={this.isChild ? {} : { backgroundColor: tag.color() }}
-        href={app.route.tag(tag)}
-        disabled={this.isChild ? {false} {true}}
+        href={this.isChild ? {app.route.tag(tag)} : {true}}
+        disabled={this.isChild ? {false} : {true}}
       >
         {this.contentItems().toArray()}
       </Link>,
