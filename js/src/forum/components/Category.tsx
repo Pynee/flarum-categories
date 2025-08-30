@@ -91,7 +91,7 @@ export default class Category extends Component<Attrs> {
     const tag = this.tag;
 
     const children = this.isChild ? [] : sortTags(tag.children() || []);
-
+    console.log(this.isChild);
     items.add(
       'link',
       <Link
