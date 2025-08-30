@@ -1,5 +1,5 @@
 {
-  "name": "askvortsov/flarum-categories",
+  "name": "pynee/flarum-categories",
   "description": "Traditional Category Layout for Flarum",
   "keywords": [
     "flarum"
@@ -7,8 +7,8 @@
   "type": "flarum-extension",
   "license": "MIT",
   "support": {
-    "issues": "https://github.com/askvortsov1/flarum-categories/issues",
-    "source": "https://github.com/askvortsov1/flarum-categories",
+    "issues": "https://github.com/Pynee/flarum-categories/issues",
+    "source": "https://github.com/Pynee/flarum-categories",
     "forum": "https://discuss.flarum.org/d/23184-flarum-categories"
   },
   "require": {
@@ -17,8 +17,8 @@
   },
   "authors": [
     {
-      "name": "Alexander Skvortsov",
-      "email": "askvortsov@flarum.org",
+      "name": "Jaakko Ylä-Pynnönen",
+      "email": "",
       "role": "Developer"
     }
   ],
