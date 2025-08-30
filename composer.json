@@ -8,8 +8,7 @@
   "license": "MIT",
   "support": {
     "issues": "https://github.com/Pynee/flarum-categories/issues",
-    "source": "https://github.com/Pynee/flarum-categories",
-    "forum": "https://discuss.flarum.org/d/23184-flarum-categories"
+    "source": "https://github.com/Pynee/flarum-categories"
   },
   "require": {
     "flarum/core": "^1.2.0",
@@ -23,7 +22,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "pynee\\FlarumCategories\\": "src/"
+      "Pynee\\FlarumCategories\\": "src/"
     }
   },
   "extra": {
