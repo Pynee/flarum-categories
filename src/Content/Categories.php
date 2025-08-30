@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of askvortsov/flarum-categories
+ * This file is part of pynee/flarum-categories
  *
  *  Copyright (c) 2021 Alexander Skvortsov.
  *
@@ -9,7 +9,7 @@
  *  LICENSE file that was distributed with this source code.
  */
 
-namespace Askvortsov\FlarumCategories\Content;
+namespace Pynee\FlarumCategories\Content;
 
 use Flarum\Api\Client;
 use Flarum\Frontend\Document;
@@ -93,8 +93,8 @@ class Categories
         });
 
         $defaultRoute = $this->settings->get('default_route');
-        $document->title = $this->translator->trans('askvortsov-categories.forum.all_categories.meta_title_text');
-        $document->meta['description'] = $this->translator->trans('askvortsov-categories.forum.all_categories.meta_description_text');
+        $document->title = $this->translator->trans('pynee-categories.forum.all_categories.meta_title_text');
+        $document->meta['description'] = $this->translator->trans('pynee-categories.forum.all_categories.meta_description_text');
         $document->content = $this->view->make('tags::frontend.content.tags', compact('primaryTags', 'secondaryTags', 'children'));
         $document->canonicalUrl = $defaultRoute === '/categories' ? $this->url->to('forum')->base() : $request->getUri()->withQuery('');
         $document->payload['apiDocument'] = $apiDocument;

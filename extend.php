@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of askvortsov/flarum-categories
+ * This file is part of pynee/flarum-categories
  *
  *  Copyright (c) 2021 Alexander Skvortsov.
  *
@@ -9,9 +9,9 @@
  *  LICENSE file that was distributed with this source code.
  */
 
-namespace Askvortsov\FlarumCategories;
+namespace Pynee\FlarumCategories;
 
-use Askvortsov\FlarumCategories\Content\Categories;
+use Pynee\FlarumCategories\Content\Categories;
 use Flarum\Api\Serializer\BasicUserSerializer;
 use Flarum\Extend;
 use Flarum\Post\Event\Hidden;
@@ -32,14 +32,14 @@ return [
         ->css(__DIR__.'/resources/less/admin.less'),
 
     (new Extend\Settings())
-        ->serializeToForum('categories.keepTagsNav', 'askvortsov-categories.keep-tags-nav', 'boolval')
-        ->serializeToForum('categories.fullPageDesktop', 'askvortsov-categories.full-page-desktop', 'boolval')
-        ->serializeToForum('categories.compactMobile', 'askvortsov-categories.compact-mobile', 'boolval')
-        ->serializeToForum('categories.parentRemoveIcon', 'askvortsov-categories.parent-remove-icon', 'boolval')
-        ->serializeToForum('categories.parentRemoveDescription', 'askvortsov-categories.parent-remove-description', 'boolval')
-        ->serializeToForum('categories.parentRemoveStats', 'askvortsov-categories.parent-remove-stats', 'boolval')
-        ->serializeToForum('categories.parentRemoveLastDiscussion', 'askvortsov-categories.parent-remove-last-discussion', 'boolval')
-        ->serializeToForum('categories.childBareIcon', 'askvortsov-categories.child-bare-icon', 'boolval', true),
+        ->serializeToForum('categories.keepTagsNav', 'pynee-categories.keep-tags-nav', 'boolval')
+        ->serializeToForum('categories.fullPageDesktop', 'pynee-categories.full-page-desktop', 'boolval')
+        ->serializeToForum('categories.compactMobile', 'pynee-categories.compact-mobile', 'boolval')
+        ->serializeToForum('categories.parentRemoveIcon', 'pynee-categories.parent-remove-icon', 'boolval')
+        ->serializeToForum('categories.parentRemoveDescription', 'pynee-categories.parent-remove-description', 'boolval')
+        ->serializeToForum('categories.parentRemoveStats', 'pynee-categories.parent-remove-stats', 'boolval')
+        ->serializeToForum('categories.parentRemoveLastDiscussion', 'pynee-categories.parent-remove-last-discussion', 'boolval')
+        ->serializeToForum('categories.childBareIcon', 'pynee-categories.child-bare-icon', 'boolval', true),
 
     (new Extend\ApiController(ListTagsController::class))
         ->addOptionalInclude('lastPostedDiscussion.lastPostedUser'),
@@ -47,7 +47,7 @@ return [
     (new Extend\ApiSerializer(TagSerializer::class))
         ->attributes(function ($serializer, $model, $attributes) {
             $settings = resolve(SettingsRepositoryInterface::class);
-            if ($settings->get('askvortsov-categories.small-forum-optimized', false)) {
+            if ($settings->get('pynee-categories.small-forum-optimized', false)) {
                 $result = $model->discussions()
                     ->selectRaw('sum(comment_count) as postCount, count(id) as discussionCount')
                     ->whereVisibleTo($serializer->getActor())

@@ -1,4 +1,4 @@
-askvortsov-categories:
+pynee-categories:
   admin:
     basics:
       categories_label: Categories
@@ -15,7 +15,7 @@ askvortsov-categories:
     help:
       child_bare_icon: Should icons on child categories be displayed without a circular background?
       full_page_desktop: Should the sidebar nav menu be collapsed to a row (like on the traditional tags page)? This will also hide widgets (such as Friends of Flarum Forum Statistics) from the categories page navbar.
-      small_forum_optimized:  This will give more accurate discussion/post counts, but will slow medium and large forums dramatically.
+      small_forum_optimized: This will give more accurate discussion/post counts, but will slow medium and large forums dramatically.
     headings:
       nav: Navigation
       layout: Layout
@@ -27,11 +27,11 @@ askvortsov-categories:
   forum:
     all_categories:
       meta_description_text: All Categories
-      meta_title_text: => askvortsov-categories.ref.categories
+      meta_title_text: => pynee-categories.ref.categories
     header:
       back_to_categories_tooltip: Back to Categories
     index:
-      categories_link: => askvortsov-categories.ref.categories
+      categories_link: => pynee-categories.ref.categories
     stat-widgets:
       discussion_label: Discussions
       post_label: Posts

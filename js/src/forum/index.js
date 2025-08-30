@@ -35,7 +35,7 @@ function pruneIndexNav(items, func) {
   }
 }
 
-app.initializers.add('askvortsov/flarum-categories', () => {
+app.initializers.add('pynee/flarum-categories', () => {
   app.routes.categories = {
     path: '/categories',
     component: CategoriesPage,
@@ -47,7 +47,7 @@ app.initializers.add('askvortsov/flarum-categories', () => {
     items.add(
       'categories',
       <LinkButton icon="fas fa-th-list" href={app.route('categories')}>
-        {app.translator.trans('askvortsov-categories.forum.index.categories_link')}
+        {app.translator.trans('pynee-categories.forum.index.categories_link')}
       </LinkButton>,
       -9.5
     );

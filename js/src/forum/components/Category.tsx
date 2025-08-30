@@ -264,7 +264,7 @@ export default class Category extends Component<Attrs> {
         'discussionCount',
         StatWidget.component({
           count: Intl.NumberFormat().format(this.tag.discussionCount()),
-          label: app.translator.trans('askvortsov-categories.forum.stat-widgets.discussion_label'),
+          label: app.translator.trans('pynee-categories.forum.stat-widgets.discussion_label'),
           icon: 'fas fa-file-alt',
         }),
         15
@@ -274,7 +274,7 @@ export default class Category extends Component<Attrs> {
         'postCount',
         StatWidget.component({
           count: Intl.NumberFormat().format(this.tag.postCount()),
-          label: app.translator.trans('askvortsov-categories.forum.stat-widgets.post_label'),
+          label: app.translator.trans('pynee-categories.forum.stat-widgets.post_label'),
           icon: 'fas fa-comment',
         }),
         10

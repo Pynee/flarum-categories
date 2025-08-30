@@ -19,7 +19,7 @@ export default class CategoriesPage extends Page {
   oninit(vnode) {
     super.oninit(vnode);
 
-    app.history.push('categories', extractText(app.translator.trans('askvortsov-category.forum.header.back_to_categories_tooltip')));
+    app.history.push('categories', extractText(app.translator.trans('pynee-category.forum.header.back_to_categories_tooltip')));
 
     this.tags = [];
 
@@ -101,6 +101,6 @@ export default class CategoriesPage extends Page {
   oncreate(vnode) {
     super.oncreate(vnode);
 
-    app.setTitle(extractText(app.translator.trans('askvortsov-categories.forum.all_categories.meta_title_text')));
+    app.setTitle(extractText(app.translator.trans('pynee-categories.forum.all_categories.meta_title_text')));
   }
 }

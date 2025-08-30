@@ -1,6 +1,6 @@
 # Flarum Categories
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg) [![Latest Stable Version](https://img.shields.io/packagist/v/askvortsov/flarum-categories.svg)](https://packagist.org/packages/askvortsov/flarum-categories)
+![License](https://img.shields.io/badge/license-MIT-blue.svg) [![Latest Stable Version](https://img.shields.io/packagist/v/pynee/flarum-categories.svg)](https://packagist.org/packages/pynee/flarum-categories)
 
 A [Flarum](http://flarum.org) extension. Ever wanted a traditional categories page for Flarum? Well, now you have it!
 
@@ -11,19 +11,18 @@ A [Flarum](http://flarum.org) extension. Ever wanted a traditional categories pa
 Take a look at a site running it at:
 https://forum.youthneuro.org
 
-
 ### Installation
 
 Use [Bazaar](https://discuss.flarum.org/d/5151-flagrow-bazaar-the-extension-marketplace) or install manually with composer:
 
 ```sh
-composer require askvortsov/flarum-categories
+composer require pynee/flarum-categories
 ```
 
 ### Updating
 
 ```sh
-composer update askvortsov/flarum-categories
+composer update pynee/flarum-categories
 ```
 
 ### Feedback and Suggestions
@@ -32,6 +31,6 @@ I am very open to feedback and feature suggestions! Please comment on discuss or
 
 ### Links
 
-- [Packagist](https://packagist.org/packages/askvortsov/flarum-categories)
-- [Github](https://github.com/askvortsov1/flarum-categories)
+- [Packagist](https://packagist.org/packages/pynee/flarum-categories)
+- [Github](https://github.com/pynee1/flarum-categories)
 - [Discuss](https://discuss.flarum.org/d/23184-flarum-categories)

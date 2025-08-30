@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of askvortsov/flarum-categories
+ * This file is part of pynee/flarum-categories
  *
  *  Copyright (c) 2021 Alexander Skvortsov.
  *

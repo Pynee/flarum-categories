@@ -24,7 +24,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "Askvortsov\\FlarumCategories\\": "src/"
+      "Pynee\\FlarumCategories\\": "src/"
     }
   },
   "extra": {

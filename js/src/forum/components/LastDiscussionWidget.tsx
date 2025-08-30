@@ -31,7 +31,7 @@ export default class LastDiscussionWidget extends Component<Attrs> {
     const discussion = this.attrs.discussion;
 
     if (!discussion) {
-      return <div class="LastDiscussion">{app.translator.trans('askvortsov-categories.forum.last_discussion_widget.no_discussions')}</div>;
+      return <div class="LastDiscussion">{app.translator.trans('pynee-categories.forum.last_discussion_widget.no_discussions')}</div>;
     }
 
     const user = discussion.lastPostedUser();
