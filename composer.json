@@ -18,13 +18,12 @@
   "authors": [
     {
       "name": "Jaakko Ylä-Pynnönen",
-      "email": "",
       "role": "Developer"
     }
   ],
   "autoload": {
     "psr-4": {
-      "Pynee\\FlarumCategories\\": "src/"
+      "pynee\\FlarumCategories\\": "src/"
     }
   },
   "extra": {
